@@ -34,7 +34,7 @@
 ```c++
 class Solution {
 public:
-  //使用双端队列，队列的front始终保持为窗口的最大值，即便弹出了下一个front仍为当前最大。
+  //使用双端队列，队列的front始终保持为窗口的最大值，即便弹出了下一个front仍为当前最大。O(n)
     vector<int> maxSlidingWindow(vector<int>& nums, int k) {
         vector<int> res;
         deque<int> dq;
